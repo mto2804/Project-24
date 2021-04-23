@@ -6,14 +6,13 @@ class Stone {
         'restitution':0.5
       };
       this.body = Bodies.rectangle(x, y, 70, 70, options);
-      this.width = 150;
-      this.height = 40;
+      this.width = 100;
+      this.height = 100;
       World.add(world, this.body);
     };
     display(){
       var pos = this.body.position;
-      pos.x = mouseX;
-      pos.y = mouseY;
+      
       var angle = this.body.angle;
   
       push();
